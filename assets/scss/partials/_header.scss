@@ -1,0 +1,151 @@
+.site-nav {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: #fff;
+  z-index: 1030;
+}
+.main-menu {
+  .nav-link {
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    &:hover{
+      color: #4ed3ff;
+    }
+  }
+    .nav-item{
+      @media(min-width:992px){
+        margin-left: 20px;
+      }
+      
+      &:nth-child(7){ 
+      .nav-link {
+        color: #4ed3ff ;
+      }
+    }
+      &:last-child{ 
+      .nav-link {
+        background: #fff;
+        color: #000;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 4px;
+        box-shadow: 0px 5px 18px 0px rgba(0, 23, 65, 0.3);
+      }
+    }
+
+  }
+  
+}
+  
+.intro-hero {
+  position: relative;
+  background-color: transparent;
+  background-image: linear-gradient(0deg, #00c6fb 0%, #005bea 92%);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;  
+  min-height: 100vh;
+  z-index: 10;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    top: 0;
+    right: 0;
+    background: url(../img/wperp-home-bg-illustration.svg) no-repeat scroll 0 0;
+    background-position: center 100px;
+    z-index: -1;
+  }
+}
+
+.intro-hero__text {
+  color: #a4e2ff;
+  font-size: 18px;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 65px;
+  > span {
+    display: block;
+  }
+}
+
+.hero-tagline {
+  > span {
+    color: #57ddff;
+  }
+}
+
+.intro-btn{
+  .list-inline{
+    &-item{
+      &:first-child{
+        .btn {
+          background: #14d6e8;
+          box-shadow: 0px 12px 35px 0px rgba(86,86,86,0.3);
+          padding-left: 20px;
+          padding-right: 20px;
+          &:hover{
+            background: lighten(#14d6e8, 5%);
+          }
+        }
+      }
+      &:nth-child(2){
+        .btn {
+          background: rgba(#fff, .1);
+          box-shadow: 0px 10px 32px 0px rgba(86,86,86,0.3);
+          padding-left: 20px;
+          padding-right: 20px;
+          &:hover{
+            background: lighten(#14d6e8, 5%);
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+    transition: .3s;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
